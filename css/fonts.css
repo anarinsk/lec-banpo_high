@@ -1,0 +1,24 @@
+/* Extra CSS */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slabs');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slabs');
+@import url('https://fonts.googleapis.com/css?family=convergence');
+@import url('https://fonts.googleapis.com/css?family=Saira+Condensed'); 
+@import url('https://fonts.googleapis.com/css?family=Oswald'); */
+@import url(http://fonts.googleapis.com/earlyaccess/jua.css);
+
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 300;
+    font-size: 16pt;
+    color: #ffffff;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 24pt;
+    color: #D8B17E;
+  }

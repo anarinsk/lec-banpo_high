@@ -1,1 +1,1 @@
-# lec-banpo_high
+# Xaringan for UNIST talk on NCSOFT datacenter 

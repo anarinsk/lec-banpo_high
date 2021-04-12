@@ -1,0 +1,575 @@
+---
+title: "Hitchhiker's Guide to AI"
+subtitle: "혹은 인문사회계 학생을 위한 조언"
+author: "허준석 Jun-sok Huhh / NCSOFT"
+date: "2021/05/14 (updated: `r Sys.Date()`)" 
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    #yolo: true
+    #self_contained: true
+    css: 
+      - "css/animate.css"
+      - "css/xaringan-themer.css"
+      - "css/title.css"
+      - "css/progressbar.css"
+      - "css/custom.css"
+      #- "css/fonts.css"
+      - "css/title-slide.css"
+    nature:
+      ratio: "16:10"
+      highlightStyle: github
+      highlightLines: true
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>`
+      countIncrementalSlides: false
+---
+
+```{r css setting, include = FALSE}
+# Related csses are generated in css/  
+#eval(parse('set-css.R', encoding="UTF-8"))
+source('small_bites.R')
+#options(htmltools.dir.version = FALSE)
+```
+
+layout: true
+class: top, left, spaced, animated, fadeIn
+
+---
+background-image: url(img/sword_2.jpg)
+background-size: cover
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/ncsoft2.jpg)
+background-size: cover
+
+# Who am I  
+<br>
+<br>
+## &thinsp; `r icon_rocket()` PhD in Economics (evolutionary game theory)
+## &thinsp; `r icon_rocket()` Data Center, Lead (Since 2019)
+
+---
+class: left, middle, animated, FadeIn
+
+# 오늘 할 이야기 
+
+### &thinsp; `r icon_rocket()` AI 어떻게 흘겨볼 것이냐?  
+### &thinsp; `r icon_rocket()` 데이터 과학, 이 시대의 기본기 
+### &thinsp; `r icon_rocket()` 인문사회계 학생들에게 
+### &thinsp; `r icon_rocket()` 질의 / 응답 
+
+---
+background-image: url(img/Data-Center_wrong.jpg)
+background-size: cover
+class: center, middle, animated, fadeIn
+# <span style="color:black; background-color:gray">&thinsp;Data Center?&thinsp;</span>
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/Data-Center_wrong.jpg)
+background-size: cover
+class: center, middle, animated, fadeIn
+
+# It's just a name of division. 
+
+---
+# Data Center에서 무엇을 하나요?
+
++ 떨어지는 로그 데이터를 관리하기 위한 소프트웨어 기반 유지 
++ 데이터로 분석 하기 
++ 분석된 데이터로 커뮤니케이션 하기 
+  
+---
+class: left, top
+background-image: url(img/dc-infra.png)
+background-size: contain
+
+# Data Volume of DC
+
+---
+class: left, top
+background-image: url(img/peta.jpg)
+background-size: cover
+
+
+---
+class: center, middle
+background-image: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)),url(img/peta.jpg)
+background-size: cover
+class: center, left, animated, fadeIn
+<br>
+<br>
+<br>
+### 1 Byte = $2^8$ bit 
+### 1 KB = $2^{10}$ Byte $\approx$ 1,000 Byte
+### 1 MB = ${\rm 1KB}^3 \approx 10^{3+3}$ Byte
+### 1 GB = ${\rm 1KB}^6 \approx 10^{3+6}$ Byte
+
+
+???
+
+This is the reason that you see size of your drive is less than the spec. 
+
+The maker of drive shows you decimal capacity. 
+
+But, Windows shows you 1 KB based on binary 1 Byte. 
+
+That is to say, 
+
+For 1 TB in decimal is around 976GB... 
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/question-marks.jpg)
+background-size: cover
+class: fadeIn
+# Questions for You  
+
+- AI 하면 무엇이 떠오르나요? 
+- AI는 정확한 표현인가요? 
+- 우리가 매일 접하고 있는 AI는 무엇일까? 
+
+
+---
+background-image: url(img/excel-like.jpg)
+background-size: cover
+class: center, middle, animated, fadeIn
+
+#<span style="color:black; background-color:gray">&thinsp;Look familiar?&thinsp;</span> 
+
+???
+
+Maybe you are used to this table. 
+
+Excel is your basic data format. 
+
+
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/excel-like.jpg)
+background-size: cover
+class: center, middle, animated, fadeIn
+
+# It's organized and tabulated one. 
+
+???
+
+Your first data analytics may start with excel-like ones. 
+
+Unfortunately, if your have such a good organized data, you are almost at the end of the finish line. 
+
+
+---
+# Data May Be A Pile of 'Garbage...'
+<br>
+### &thinsp; `r icon_check()` Usually data are not (cannot be) so *clean*. 
+### &thinsp; `r icon_check()` Something organized or tabulated &rarr; You got the picture of data. 
+### &thinsp; `r icon_check()` Big data are generally unorganized, unstructured, and messy.
+
+
+
+---
+background-image: url(img/gameplaying.gif)
+background-size: cover
+class: left, top, animated, fadeIn
+### <span style="color:black; background-color:gray">&thinsp;When you playing game...&thinsp;</span> 
+
+---
+background-image: url(img/NC_MMORPG.png)
+background-size: contain
+class: left, top, animated, fadeIn
+### The other side of playing 
+
+???
+
+For online games, your play should be transmitted to the server you joined. 
+
+The results of game playing record continuously via pre-defined format. 
+
+This record tracks your history, gains, losses, fights and cooperation among players of your play.
+
+Side questions. 
+
+How many servers are there in 리니지M? 
+
+Tell me your guess. 
+
+---
+background-image: url(img/hdfs.png)
+background-size: contain
+class: left, top, animated, fadeIn
+
+---
+background-image: url(img/log.png)
+background-size: cover
+class: center, middle, animated, fadeIn
+##<span style="color:black; background-color:gray">&thinsp;logs are ...&thinsp;</span> 
+
+???
+
+As you see, logs are just a piles of text. 
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/log.png)
+background-size: cover
+class: center, middle, animated, fadeIn
+## meaningless (if you don't get to their secret)
+
+???
+
+To someone, it is meaningless one.
+
+---
+background-image: url(img/matrix_neo.gif)
+background-size: cover
+class: center, middle, animated, fadeIn
+
+???
+
+How to turn mountain of infos into valuable ones?   
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/matrix_neo.gif)
+background-size: cover
+class: center, middle, animated, fadeIn
+## How to transform logs into meaningful ones? 
+
+---
+background-image: url(img/datacleansing.png)
+background-size: cover
+class: center, middle, animated, fadeIn
+
+???
+
+The beginning, and I dare to say that, The single most important job of data work is cleaning data. 
+
+So, we have to be a janitor of data. 
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/datacleansing.png)
+background-size: cover
+class: left, top, animated, fadeIn
+
+# DC as A Data Janitor
+<br>
+## &thinsp; `r icon_rocket()` Think what a janitor does.
+### &emsp; &thinsp; `r icon_check()` All of janitor jobs are about preparing something for the work 
+### &emsp; &thinsp; `r icon_check()` Any automated system cannot process log without human effort.
+### &emsp; &thinsp; `r icon_check()` Around 90% of data works is janitor jobs.   
+
+???
+The beginning, I dare to say that, the single most important job of data work is cleaning data.
+
+So, we have to be a janitor of data.
+
+Let’s on this. I used ‘janitor’ instead of data scientist, data engineer.
+
+Because, cleaning job is really dirty and toiling
+
+---
+# What Data Engineers do in DC 
+<br>
+### &emsp; `r icon_rocket()` Managing our custom Hadoop system
+### &emsp; `r icon_rocket()` Developing data tools and services 
+### &emsp; `r icon_rocket()` Operating day-to-day data stream  
+
+
+???
+
+Hadoop is one of standards in bigdata technology. It is open source. But to utilize the power of the Hadoop, a tons of research and effort is needed. 
+
+We also develops inhouse tools and services customized for our game services. 
+
+Data should be managed in ecosystems. So operation is important. Each part get ready to guarantee the whole system work smoothly.  
+
+
+---
+background-image: url(img/comm_2.gif)
+background-color: black
+background-size: cover
+class: center, middle, animated, fadeIn
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/comm_2.gif)
+background-size: cover
+class: left, top, animated, fadeIn
+# DC as A Data Communicator 
+<br>
+<br>
+### &emsp; `r icon_rocket()` Data is nothing if its messege fails to be delivered.  
+### &emsp; `r icon_rocket()` Communication is key for data works.
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/comm_3.jpg)
+background-size: cover
+class: left, top, animated, fadeIn
+# Two Pillars of Communication
+<br>
+<br>
+## &thinsp; 1. Metrics 
+## &thinsp; 2. Visualization 
+
+
+???
+
+Two areas are big issue to talk each other deeply. 
+
+Today, I'm going to touch the surface of the first. 
+
+We have a limited time. 
+
+---
+# Metrics Frequently Used
+<br>
+### &emsp; `r icon_rocket()` AU = Active Users 
+### &emsp; `r icon_rocket()` ARPU = Average Revenue Per User 
+### &emsp; `r icon_rocket()` ARPPU = Average Revenue Per Paying User 
+### &emsp; `r icon_rocket()` CLV = Customer's Life-time Value 
+
+---
+background-image: url(img/marketing_analytics.jpg)
+background-size: cover
+class: center, middle, animated, fadeIn
+##<span style="color:black; background-color:gray">&thinsp;Conventional wisdom...&thinsp;</span> 
+
+???
+
+These metrics are not new. they have been used by marketing or management of telecommunication, shopping, etc. 
+
+The crucial part with game business are their 
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/marketing_analytics.jpg)
+background-size: cover
+class: center, middle, animated, fadeIn
+## Speed and Reinvent 
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/speed.jpg)
+background-size: cover
+class: left, top, animated, fadeIn
+
+# Speed: Near-real Time 
+<br>
+### &emsp; `r icon_rocket()` The Speed simply matters,
+### &emsp; `r icon_rocket()` Because bugs can be devastating...
+
+???
+
+In virtual world, game, small loophole can do much much bigger damage on game service. 
+
+So, we must detect them as soon as possible. 
+
+---
+background-image: url(img/L2M.gif)
+background-size: contain
+background-color: black
+class: center, middle, animated, fadeIn
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/L2M.gif)
+background-size: cover
+background-color: black
+class: center, middle, animated, fadeIn
+
+##<span style="color:black; background-color:gray"> &thinsp; While you are playing...&thinsp;</span> 
+
+---
+background-image: url(img/now_1.png)
+background-size: contain
+class: center, middle, animated, fadeIn
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/now_1.png)
+background-size: contain
+class: center, middle, animated, fadeIn
+##<span style="color:black; background-color:gray"> &thinsp; We are observing players within 30 seconds time lag &thinsp;</span> 
+
+
+---
+background-image: url(img/now_2.png)
+background-size: contain
+class: center, middle, animated, fadeIn
+
+???
+
+Sorry for the masking. 
+
+Because we are very careful about numbers. 
+
+You see that, our dash board of the virtual world, we are servicing. 
+
+---
+# Reinvent: Importing Useful Metrics 
+<br> 
+<br>
+## &thinsp; `r icon_rocket()` Transforming key metrics of real world 
+## &thinsp; `r icon_rocket()` Applying *proven* metrics to virtual world 
+
+---
+background-image: url(img/auction_1.jpg)
+background-color: black
+background-size: contain
+class: center, middle, animated, fadeIn
+
+???
+
+Do you know what is this about? 
+
+This is auction house in game Lineage. 
+
+Players can exchange their items to Dia, in game currency. 
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/auction_1.jpg)
+background-size: contain
+class: center, middle, animated, fadeIn
+### `r icon_check()` The one and only MARKET in *Lineage M*
+### `r icon_check()` Does this look like *stock exchange*? 
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/SE.jpg)
+background-size: cover
+
+# Auction House $\approx$ Stock Exchange 
+<br>
+### &thinsp; `r icon_rocket()` An auction house in game shows the valuation of resources.
+### &thinsp; `r icon_rocket()` How to summarise such valuation in auctioning? 
+### &thinsp; `r icon_rocket()` Stock market index may be a good start! 
+
+---
+# Similarity 
+<br>
+<br>
+### &thinsp; `r icon_check()` Valuation by players or traders
+### &thinsp; `r icon_check()` Pricing mechanism (auctioning & matching)
+
+---
+# Difference 
+<br>
+<br>
+### &thinsp; `r icon_check()` Single market vs. Multiple markets (servers)
+### &thinsp; `r icon_check()` Unique unit vs. Variation in a unit 
+
+---
+background-image: url(img/auction_pca.png)
+background-size: contain
+class: center, middle, animated, fadeIn
+
+
+??? 
+
+To make index, we should fix reference point, day 0 index. 
+
+And we are producing daily or weekly index for auction house in game.
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/auction_pca.png)
+background-size: contain
+class: left, middle, animated, fadeIn
+### &thinsp; `r icon_check()` With PCA, we built composite index for users' auctioning.
+### &thinsp; `r icon_check()` We are tracking daily behaviors and trends.
+
+---
+background-image: url(img/index_1.png)
+background-size: contain
+class: center, middle, animated, fadeIn
+
+---
+background-image: url(img/index_2.png)
+background-size: contain
+class: center, middle, animated, fadeIn
+
+---
+background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url(img/detective.jpg)
+background-size: cover
+
+# DC as A Data Detective 
+<br>
+<br>
+## &thinsp; `r icon_rocket()` There is no *magic* called MACHINE LEARNING. 
+## &thinsp; `r icon_rocket()` Smart analytics still matters  
+???
+
+Some say that machine is final and ultimate solution. 
+
+But, many problem are need to be checked by human intelligence.  
+
+---
+# When Experimentation Is Not An Option 
+<br>
+### &thinsp; `r icon_rocket()` A/B test is widely used to optimize many services
+### &thinsp; `r icon_rocket()` In social events, A/B test is often controversial. 
+#### &emsp;  &emsp; &thinsp;  `r icon_check()` Consider Covid-19 vaccine A/B.
+### &thinsp; `r icon_rocket()` Statistical methods are useful. 
+
+---
+# PK vs Retention
+
+## &thinsp; `r icon_rocket()` Can we fix causality?
+### &emsp; &thinsp; `r icon_check()` PK &rarr; Better Retention? <br> &emsp; &thinsp; `r icon_check()` Better Retention &rarr; PK? 
+## &thinsp; `r icon_rocket()` No conclusion without experiment design  
+
+???
+Do you know player killing, PK. It is the act of killing others in game, without any formal consent. If formal consent is reached, it called P v P. 
+
+---
+# Natural Experiment
+<br>
+## &thinsp;  `r icon_rocket()` With natural experiment,<br> &emsp;&emsp; We have a randomizing machine. 
+## &thinsp; `r icon_rocket()` What is natural experiment for this problem?
+
+---
+background-image: url(img/PK_2.jpg)
+background-size: cover
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url(img/PK_2.jpg)
+background-size: cover
+
+# PK for The First Time 
+<br>
+## &thinsp; `r icon_rocket()` 'Being first PKed' (FPK) tends to happen randomly. 
+## &thinsp; `r icon_rocket()` 'FPK' vs 'NOT FPK' comparison 
+## &thinsp; `r icon_rocket()` FPK is randomizing device, a natural experiment. 
+
+---
+background-image: url(img/elephant_nudge.jpg)
+background-size: cover
+
+---
+background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url(img/elephant_nudge.jpg)
+background-size: cover
+
+What is nudge? 
+
+It's lightweight suggestion by pushing someone with elbow. 
+
+# Three Nudges for You 
+<br>
+## &thinsp; `r icon_rocket()` Do 'trial and error,' again and again. 
+## &thinsp; `r icon_rocket()` Learn computer languages.
+## &thinsp; `r icon_rocket()` Use git & Share your results. 
+
+
+---
+layout:false
+class: center, middle
+background-image: url(img/penguin.gif)
+background-size: cover
+
+# Q & A
+
+
+---
+background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(img/sources.png)
+background-size: cover
+class: left, top, animated, fadeIn
+
+# References 
+
+- [The source of this presentation](https://github.com/anarinsk/lec-unist-nc_dc)
+- [DANBI: Making Index of Auction House](https://danbi-ncsoft.github.io/works/2020/08/13/works-econ_index_1.html)
+- [DANBI: Causality: PK vs Retention](https://danbi-ncsoft.github.io/works/2020/06/17/works-pk_analysis.html)
+
