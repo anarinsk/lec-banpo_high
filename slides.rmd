@@ -1,6 +1,6 @@
 ---
 title: "Hitchhiker's Guide to AI"
-subtitle: "혹은 인문사회계 학생을 위한 조언"
+subtitle: "혹은 인문사회계 학생을 위한 가이드 투어"
 author: "허준석 Jun-sok Huhh / NCSOFT"
 date: "2021/05/14 (updated: `r Sys.Date()`)" 
 output:
@@ -14,10 +14,10 @@ output:
       - "css/title.css"
       - "css/progressbar.css"
       - "css/custom.css"
-      #- "css/fonts.css"
       - "css/title-slide.css"
     nature:
       ratio: "16:10"
+      beforeInit: "macros.js"
       highlightStyle: github
       highlightLines: true
       slideNumberFormat: |
@@ -108,18 +108,6 @@ class: center, left, animated, fadeIn
 ### 1 GB = ${\rm 1KB}^6 \approx 10^{3+6}$ Byte
 
 
-???
-
-This is the reason that you see size of your drive is less than the spec. 
-
-The maker of drive shows you decimal capacity. 
-
-But, Windows shows you 1 KB based on binary 1 Byte. 
-
-That is to say, 
-
-For 1 TB in decimal is around 976GB... 
-
 ---
 background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/question-marks.jpg)
 background-size: cover
@@ -128,36 +116,108 @@ class: fadeIn
 
 - AI 하면 무엇이 떠오르나요? 
 - AI는 정확한 표현인가요? 
-- 우리가 매일 접하고 있는 AI는 무엇일까? 
-
+- 우리가 매일 접하고 있는 AI는 무엇인가요? 
 
 ---
-background-image: url(img/excel-like.jpg)
+# Fundamental Q for AI 
+
+.pull-left[
+![](img/Painting_of_David_Hume.jpg)
+]
+
+.pull-right[
+
+### "
+우리가 본 것에서 시작한 일반화를 보지 못한 것까지 적용하는 일은 어떻게 정당화할 수 있는가?
+###"
+
+]
+
+---
+(Too Short) History of AI 
+
+---
+
+# 인공신경망(artificial neural net)
+
++ Mcculloch & Pitts (1943) 
++ 인간의 신경망이 작동하는 방식을 본딴 algorithm logic 
+
+---
+
+background-image: url(img/1_3nMF3cYJDopFnVagAK7Thw.png)
 background-size: cover
 class: center, middle, animated, fadeIn
 
-#<span style="color:black; background-color:gray">&thinsp;Look familiar?&thinsp;</span> 
+---
+background-image: url(img/whitebg.jpg)
+background-size: cover
+class: left, bottom, animated, fadeIn
 
-???
-
-Maybe you are used to this table. 
-
-Excel is your basic data format. 
-
+![](img/warren_walter.png)
+#### https://brunch.co.kr/@hvnpoet/61
 
 
 ---
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/excel-like.jpg)
+
+background-image: url(img/neural_net.png)
+background-size: contain
+class: center, middle, animated, fadeIn
+
+---
+# Failure of Perceptron 
+
++ 퍼셉트론이란? 하나의 층을 지닌 인공 신경망
++ XOR를 분류할 수 있는가? 
+  + XOR: Exclusive OR 
+
+---
+background-image: url(img/whitebg.jpg)
+background-size: cover
+class: left, bottom, animated, fadeIn, inverted
+
+![:scale 100%](img/xor.png)
++ https://wiserloner.tistory.com/245
+
+
+---
+# Expert System 
+
++ 인간의 논리적 추론 과정을 모방 
++ 주어진 사실(공리)에서 다른 형태의 결론(정리)를 끌어내는 방법
++ 이를 자동화할 수 있다면? 
+
+---
+
+background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url(img/night-king-hbo-got-hack-740x432.png)
 background-size: cover
 class: center, middle, animated, fadeIn
 
-# It's organized and tabulated one. 
+# AI Winter of 80s (maybe till 90s)
 
-???
+---
 
-Your first data analytics may start with excel-like ones. 
+# AI의 부활 
 
-Unfortunately, if your have such a good organized data, you are almost at the end of the finish line. 
+### 홍수처럼 쏟아진 data! 
+
++ Internet! Internet! Internet!
++ Yahoo, Google, Facebook...
++ 엄청난 량의 데이터가 쌓이기 시작했다.  
+
+--
+
+### 쉬워진 하드웨어의 확장
+
++ Distributed & Cloud computing 
++ 동원 가능한 대규모 '범용' 머신의 등장 
+
+---
+
+layout:false
+class: center, middle
+background-image: url(img/Internet-users-by-world-region.png)
+background-size: contain
 
 
 ---

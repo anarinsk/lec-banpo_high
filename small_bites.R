@@ -1,14 +1,14 @@
 library(fontawesome)
 
 icon_rocket <- function(){
-    icon::fa("rocket", color="steelblue")
+    fa("rocket", fill = "steelblue")
 }
 
 icon_check <- function(){
-    icon::fa("check", color = "steelblue")
+    fa("check", fill = "steelblue")
 }
 
 
 icon_comment <- function(){
-    icon::fa("comments", color="yellow")
+    fa("comments", fill = "yellow")
 }
