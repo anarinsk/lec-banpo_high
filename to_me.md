@@ -7,3 +7,9 @@
 ## Resource 
 
 https://yongfu.name/slides/xaringan/#35 열라 도움됨! 
+
+### Xaringan themer 
+
+https://github.com/gadenbuie/xaringanthemer
+https://pkg.garrickadenbuie.com/xaringanthemer/articles/xaringanthemer.html
+https://www.garrickadenbuie.com/blog/better-progressive-xaringan/?panelset=r-markdown

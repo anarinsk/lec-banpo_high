@@ -15,6 +15,7 @@ output:
       #- "css/custom.css"
       #- "css/title-slide.css"
       - "xaringan-themer.css"
+      - "css/xthemer_custom.css"
     nature:
       ratio: "16:9"
       beforeInit: "macros.js"
@@ -60,17 +61,22 @@ background-size: cover
 # Who am I  
 <br>
 <br>
-## &thinsp; `r icon_rocket()` PhD in Economics (evolutionary game theory)
-## &thinsp; `r icon_rocket()` Data Center, Lead (Since 2019)
+.bigitem[`r icon_check()` &thinsp; PhD in Economics (evolutionary game theory)]
+
+.bigitem[`r icon_check()` &thinsp; Data Center, Lead (Since 2019)]
 
 ---
+class: highlight-last-item
 
-# 오늘 할 이야기 
+# 오늘 나눌 이야기 
 
-### &thinsp; `r icon_rocket()` AI 어떻게 흘겨볼 것이냐?  
-### &thinsp; `r icon_rocket()` 데이터 과학, 이 시대의 기본기 
-### &thinsp; `r icon_rocket()` 인문사회계 학생들에게 
-### &thinsp; `r icon_rocket()` 질의 / 응답 
+.bigitem[&thinsp; `r icon_check()` &thinsp; AI 어떻게 흘겨볼 것이냐?]
+
+.bigitem[&thinsp; `r icon_check()` &thinsp; 데이터 과학, 이 시대의 기본기]
+ 
+.bigitem[&thinsp; `r icon_check()` &thinsp; 인문사회계 학생들에게] 
+
+.bigitem[&thinsp; `r icon_check()` &thinsp; 질의 / 응답 (있다면...)]
 
 ---
 background-image: url(img/Data-Center_wrong.jpg)
@@ -89,7 +95,9 @@ class: center, middle, animated, fadeIn
 # Data Center에서 무엇을 하나요?
 
 + 떨어지는 로그 데이터를 관리하기 위한 소프트웨어 기반 유지 
+
 + 데이터로 분석 하기 
+
 + 분석된 데이터로 커뮤니케이션 하기 
   
 ---
@@ -97,7 +105,7 @@ class: left, top
 background-image: url(img/dc-infra.png)
 background-size: contain
 
-# Data Volume of DC
+.bigitem[Data Volume of DC]
 
 ---
 class: left, top
@@ -125,9 +133,17 @@ background-size: cover
 class: fadeIn
 # Questions for You  
 
-- AI 하면 무엇이 떠오르나요? 
-- AI는 정확한 표현인가요? 
-- 우리가 매일 접하고 있는 AI는 무엇인가요? 
+--
+
+.bigitem[&thinsp; `r icon_comment()` &thinsp; AI 하면 무엇이 떠오르나요?] 
+
+--
+
+.bigitem[&thinsp; `r icon_comment()` &thinsp; AI는 정확한 표현인가요?]
+
+--
+
+.bigitem[&thinsp; `r icon_comment()` &thinsp; 우리가 매일 접하고 있는 AI는 무엇인가요?] 
 
 ---
 # Fundamental Q for AI 
@@ -139,23 +155,32 @@ class: fadeIn
 .pull-right[
 
 " <br />
-.grey[우리가 본 것에서 시작한 일반화를 보지 못한 것까지 적용하는 일은 어떻게 정당화할 수 있는가?] <br />
+우리가 본 것에서 시작한 일반화를 보지 못한 것까지 적용하는 일은 어떻게 정당화할 수 있는가? <br />
+
 "
 
 ]
 
 ---
-(Too Short) History of AI 
+class: left, top
+background-image: url(img/terminator.gif)
+background-size: cover
+
+.biggitem[(Too Short) History of AI]
 
 ---
+class: highlight-last-item
 
 # 인공신경망(artificial neural net)
 
 + Mcculloch & Pitts (1943) 
-+ 인간의 신경망이 작동하는 방식을 본딴 algorithm logic 
+
+--
+
++ 인간의 신경망이 작동하는 방식을 본딴 알고리즘 
+
 
 ---
-
 background-image: url(img/1_3nMF3cYJDopFnVagAK7Thw.png)
 background-size: cover
 class: center, middle, animated, fadeIn
@@ -166,19 +191,23 @@ background-size: cover
 class: left, bottom, animated, fadeIn
 
 ![](img/warren_walter.png) <br />
-.black[출처 https://brunch.co.kr/@hvnpoet/61]
+.black.small[From: https://brunch.co.kr/@hvnpoet/61]
 
 
 ---
-
 background-image: url(img/neural_net.png)
 background-size: contain
 class: center, middle, animated, fadeIn
 
 ---
+class: highlight-last-item
+
 # Failure of Perceptron 
 
 + 퍼셉트론이란? 하나의 층을 지닌 인공 신경망
+
+--
+
 + XOR를 분류할 수 있는가? 
   + XOR: Exclusive OR 
 
@@ -187,30 +216,71 @@ background-image: url(img/whitebg.jpg)
 background-size: cover
 class: left, bottom, animated, fadeIn, inverted
 
-![:scale 100%](img/xor.png)
- - https://wiserloner.tistory.com/245
+<center>
+![:scale 90%](img/xor.png)
+</center>
+
+.black[.small[ From: https://wiserloner.tistory.com/245 ]]
 
 
 ---
+class: highlight-last-item
+
 # Expert System 
 
 + 인간의 논리적 추론 과정을 모방 
-+ 주어진 사실(공리)에서 다른 형태의 결론(정리)를 끌어내는 방법
+
+--
+
++ 주어진 사실(공리)에서 다른 형태의 결론(정리)를 끌어내는 추론 과정을 적용
+
+--
+
 + 이를 자동화할 수 있다면? 
 
 ---
+background-image: url(img/whitebg.jpg)
+background-size: cover
+class: left, middle animated, fadeIn, inverted
 
+<center>
+![:scale 100%](img/expert-system.png)
+</center> 
+
+.black.small[From:
+https://moral-robots.com/technology/what-are-expert-systems/]
+
+---
+class: highlight-last-item
+
+# Expert System의 한계  
+
++ 인간의 지식은 얼마나 규칙으로 만들 수 있는가? (지식 추출의 병목현상)
+  + Tacit vs Explicit 
+
+--
+
++ 지식은 계속해서 변한다! 
+  + 이를 유연하게 반영할 수 있는 지식 구조가 있을까? 
+
+--
+
++ 의외로 단순하지 않더라... 
+  + 번역 알고리즘의 실패 
+
+
+---
 background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url(img/night-king-hbo-got-hack-740x432.png)
 background-size: cover
 class: center, middle, animated, fadeIn
 
-# AI Winter of 80s (maybe till 90s)
+.biggitem[AI Winter of 80s (maybe till early 90s)]
 
 ---
 
 # AI의 부활 
 
-### 홍수처럼 쏟아진 data! 
+## 홍수처럼 쏟아진 data! 
 
 + Internet! Internet! Internet!
 + Yahoo, Google, Facebook...
@@ -218,53 +288,51 @@ class: center, middle, animated, fadeIn
 
 --
 
-### 쉬워진 하드웨어의 확장
+## 쉬워진 하드웨어의 확장
 
 + Distributed & Cloud computing 
 + 동원 가능한 대규모 '범용' 머신의 등장 
 
 ---
+background-image: url(img/whitebg.jpg)
+background-size: cover
+class: left, middle animated, fadeIn, inverted
 
-layout:false
-class: center, middle
-background-image: url(img/Internet-users-by-world-region.png)
-background-size: contain
+<center>
+![:scale 70%](img/Internet-users-by-world-region.png)
+</center>
+
+.black.small[From:
+https://ourworldindata.org/grapher/internet-users-by-world-region]
 
 
 ---
-# Data May Be A Pile of 'Garbage...'
-<br>
-### &thinsp; `r icon_check()` Usually data are not (cannot be) so *clean*. 
-### &thinsp; `r icon_check()` Something organized or tabulated &rarr; You got the picture of data.
-### &thinsp; `r icon_check()` Big data are generally unorganized, unstructured, and messy.
+class: highlight-last-item
+
+# 데이터는 쓰레기에 불과하다... 
 
 
++ '빅' 데이터란 무엇인가? 
+
+--
+
++ 데이터가 그냥 쌓여 있다고 통찰이 마법같이 떠오를까? 
+
+--
+
++ 데이터란 보는 사람의 시선에 따라 조직되기 마련이다. 
 
 ---
 background-image: url(img/gameplaying.gif)
 background-size: cover
 class: left, top, animated, fadeIn
-### <span style="color:black; background-color:gray">&thinsp;When you playing game...&thinsp;</span> 
+### <span style="color:black; background-color:gray">&thinsp;당신이 게임을 즐길 때... game...&thinsp;</span> 
 
 ---
 background-image: url(img/NC_MMORPG.png)
 background-size: contain
 class: left, top, animated, fadeIn
 ### The other side of playing 
-
-???
-
-For online games, your play should be transmitted to the server you joined. 
-
-The results of game playing record continuously via pre-defined format. 
-
-This record tracks your history, gains, losses, fights and cooperation among players of your play.
-
-Side questions. 
-
-How many servers are there in 리니지M? 
-
-Tell me your guess. 
 
 ---
 background-image: url(img/hdfs.png)
@@ -275,84 +343,25 @@ class: left, top, animated, fadeIn
 background-image: url(img/log.png)
 background-size: cover
 class: center, middle, animated, fadeIn
-##<span style="color:black; background-color:gray">&thinsp;logs are ...&thinsp;</span> 
-
-???
-
-As you see, logs are just a piles of text. 
+##<span style="color:black; background-color:gray">&thinsp;logs라는 녀석은...&thinsp;</span> 
 
 ---
 background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/log.png)
 background-size: cover
 class: center, middle, animated, fadeIn
-## meaningless (if you don't get to their secret)
+## 비밀을 알지 못하면 아무 의미 없다. 
 
-???
-
-To someone, it is meaningless one.
 
 ---
 background-image: url(img/matrix_neo.gif)
 background-size: cover
 class: center, middle, animated, fadeIn
 
-???
-
-How to turn mountain of infos into valuable ones?   
-
 ---
 background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/matrix_neo.gif)
 background-size: cover
 class: center, middle, animated, fadeIn
-## How to transform logs into meaningful ones? 
-
----
-background-image: url(img/datacleansing.png)
-background-size: cover
-class: center, middle, animated, fadeIn
-
-???
-
-The beginning, and I dare to say that, The single most important job of data work is cleaning data. 
-
-So, we have to be a janitor of data. 
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/datacleansing.png)
-background-size: cover
-class: left, top, animated, fadeIn
-
-# DC as A Data Janitor
-<br>
-## &thinsp; `r icon_rocket()` Think what a janitor does.
-### &emsp; &thinsp; `r icon_check()` All of janitor jobs are about preparing something for the work 
-### &emsp; &thinsp; `r icon_check()` Any automated system cannot process log without human effort.
-### &emsp; &thinsp; `r icon_check()` Around 90% of data works is janitor jobs.   
-
-???
-The beginning, I dare to say that, the single most important job of data work is cleaning data.
-
-So, we have to be a janitor of data.
-
-Let’s on this. I used ‘janitor’ instead of data scientist, data engineer.
-
-Because, cleaning job is really dirty and toiling
-
----
-# What Data Engineers do in DC 
-<br>
-### &emsp; `r icon_rocket()` Managing our custom Hadoop system
-### &emsp; `r icon_rocket()` Developing data tools and services 
-### &emsp; `r icon_rocket()` Operating day-to-day data stream  
-
-
-???
-
-Hadoop is one of standards in bigdata technology. It is open source. But to utilize the power of the Hadoop, a tons of research and effort is needed. 
-
-We also develops inhouse tools and services customized for our game services. 
-
-Data should be managed in ecosystems. So operation is important. Each part get ready to guarantee the whole system work smoothly.  
+## 로그를 어떻게 의미있는 정보로 바꿀 수 있을까?  
 
 
 ---

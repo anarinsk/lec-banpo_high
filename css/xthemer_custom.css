@@ -1,0 +1,49 @@
+/* Main title */
+/* Style for title, name, organization and date */
+.title-slide h1{
+    font-size: 80px;
+    color: white;
+}
+/* Name and organization */
+.title-slide h3:nth-of-type(1) {
+    font-size: 35px;
+    color: rgb(219, 219, 219);
+}
+/* Date */
+.title-slide h3:nth-of-type(2) {
+    font-size: 30px;
+    color:  rgb(219, 219, 219);
+}
+
+/* Custom Style */
+
+/* Assign small size font */
+.small {
+    font-size: 50%;
+  }
+.large {
+    font-size: 150%;
+  }
+
+/* class: highlight-last-item */
+.highlight-last-item > ul > li, 
+.highlight-last-item > ol > li {
+    opacity: 0.5;
+  }
+.highlight-last-item > ul > li:last-of-type,
+.highlight-last-item > ol > li:last-of-type {
+    opacity: 1;
+  }
+
+.bigitem {
+    font-size:120%; 
+    font-color: white; 
+    font-family: var(--header-font-family), var(--header-font-family-fallback);
+  }
+
+.biggitem {
+    font-size:180%; 
+    font-color: white; 
+    font-weight: 900; 
+    font-family: var(--header-font-family), var(--header-font-family-fallback);
+  }
