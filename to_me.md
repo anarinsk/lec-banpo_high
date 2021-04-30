@@ -13,3 +13,16 @@ https://yongfu.name/slides/xaringan/#35 열라 도움됨!
 https://github.com/gadenbuie/xaringanthemer
 https://pkg.garrickadenbuie.com/xaringanthemer/articles/xaringanthemer.html
 https://www.garrickadenbuie.com/blog/better-progressive-xaringan/?panelset=r-markdown
+
+### ML Example 
+
+https://teachablemachine.withgoogle.com/
+
+
+### Figures 
+
+https://www.semanticscholar.org/paper/Techniques-for-interpretable-machine-learning-Du-Liu/3df952d4a724655f7520ff95d4b2cef90fff0cae/figure/1
+
+https://cacm.acm.org/news/235707-fathers-of-the-deep-learning-revolution-receive-acm-a-m-turing-award/fulltext
+
+https://semiengineering.com/software-framework-requirements-for-embedded-vision/

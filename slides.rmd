@@ -186,6 +186,16 @@ background-size: cover
 class: center, middle, animated, fadeIn
 
 ---
+background-image: url(img/qrrettswrqx.gif)
+background-size: cover
+class: center, middle, animated, fadeIn
+
+---
+background-image: url(img/srtaecaqx.gif)
+background-size: cover
+class: center, middle, animated, fadeIn
+
+---
 background-image: url(img/whitebg.jpg)
 background-size: cover
 class: left, bottom, animated, fadeIn
@@ -241,7 +251,7 @@ class: highlight-last-item
 ---
 background-image: url(img/whitebg.jpg)
 background-size: cover
-class: left, middle animated, fadeIn, inverted
+class: left, middle, animated, fadeIn, inverted
 
 <center>
 ![:scale 100%](img/expert-system.png)
@@ -256,17 +266,20 @@ class: highlight-last-item
 # Expert System의 한계  
 
 + 인간의 지식은 얼마나 규칙으로 만들 수 있는가? (지식 추출의 병목현상)
+
   + Tacit vs Explicit 
 
 --
 
 + 지식은 계속해서 변한다! 
-  + 이를 유연하게 반영할 수 있는 지식 구조가 있을까? 
+
+  + 이를 유연하게 반영할 수 있는 일반적인 지적, 공학적 구조가 있을까? 
 
 --
 
 + 의외로 단순하지 않더라... 
-  + 번역 알고리즘의 실패 
+
+  + 익스퍼트 시스템 기반 번역 알고리즘 및 소프트웨어의 처참한 실패 
 
 
 ---
@@ -274,29 +287,41 @@ background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url(img/night-
 background-size: cover
 class: center, middle, animated, fadeIn
 
-.biggitem[AI Winter of 80s (maybe till early 90s)]
+.biggitem[80년대 그리고 90년대의 AI의 겨울]
+
+---
+background-image: url(img/whitebg.jpg) 
+background-size: cover
+class: left, bottom, animated, fadeIn, inverted
+
+<center>
+![:scale 100%](img/three-types-of-ai.png)
+</center> 
+
+.black.small[From:
+https://www.f5.com/es_es/company/blog/aI-and-the-role-of-application-services]
 
 ---
 
 # AI의 부활 
 
-## 홍수처럼 쏟아진 data! 
+## data! data! data! 
 
 + Internet! Internet! Internet!
 + Yahoo, Google, Facebook...
-+ 엄청난 량의 데이터가 쌓이기 시작했다.  
++ 엄청난 량의 데이터가 폭발적으로 쌓이기 시작했다.  
 
 --
 
 ## 쉬워진 하드웨어의 확장
 
-+ Distributed & Cloud computing 
++ Distributed & Cloud Computing 
 + 동원 가능한 대규모 '범용' 머신의 등장 
 
 ---
 background-image: url(img/whitebg.jpg)
 background-size: cover
-class: left, middle animated, fadeIn, inverted
+class: left, middle, animated, fadeIn, inverted
 
 <center>
 ![:scale 70%](img/Internet-users-by-world-region.png)
@@ -309,15 +334,38 @@ https://ourworldindata.org/grapher/internet-users-by-world-region]
 
 # Power of Deep Learning  
 
++ 이미지 인식 분야에서 먼저 탁월한 성과를 거두기 시작
+
++ 방법론과 이론은 2000년 초반에 이미 완성 
+
++ 적용 및 최적화는 2010년대에 걸쳐 눈부시게 발전 
+
+---
+background-image: url(img/SE_Nov_Article_-figure-1.jpg)
+background-size: contain
+class: left, middle, animated, fadeIn, inverted
+
 
 ---
 
-# Applcation of Deep Learning 
+# Triumph of Deep Learning 
 
++ 이미지 인식 분야에서 큰 성공을 거두고 다른 분야로 진출
+
++ 기계 번역, 문장 자동 생성 
+
++ 이미지 생성 (GAN) 
+
++ 음성 인식 
+
++ 강화 학습 (알파고, 알파스타, 알파폴드)
+
++ 자연어 처리 (GPT-3)
 
 ---
 
 # Where the Future Goes 
+
 
 
 ---
