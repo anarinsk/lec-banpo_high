@@ -26,3 +26,8 @@ https://www.semanticscholar.org/paper/Techniques-for-interpretable-machine-learn
 https://cacm.acm.org/news/235707-fathers-of-the-deep-learning-revolution-receive-acm-a-m-turing-award/fulltext
 
 https://semiengineering.com/software-framework-requirements-for-embedded-vision/
+
+
+### Further 
+
+https://medium.com/@jongdae.lim/%EA%B8%B0%EA%B3%84-%ED%95%99%EC%8A%B5-machine-learning-%EC%9D%80-%EC%A6%90%EA%B2%81%EB%8B%A4-part-1-9a0297198ad8
