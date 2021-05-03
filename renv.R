@@ -5,7 +5,10 @@ if (!requireNamespace("remotes"))
 
 devtools::install_github(c('rstudio/rmarkdown',
                            'yihui/xaringan', 
+                           'yihui/showtext',
                            'rstudio/fontawesome',
                            'xaringanthemer'))
 
 renv::init()
+
+xaringan::inf_mr()
