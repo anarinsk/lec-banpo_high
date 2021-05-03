@@ -377,16 +377,42 @@ class: left, middle, animated, fadeIn, inverted
 ![:scale 40%](img/20200808_STC657.png)
 
 
+---
+background-image: url(img/whitebg.jpg)
+background-size: cover
+class: left, middle, animated, fadeIn, inverted
+
+<center>
+![:scale 90%](img/20200613_TQC622.png)
+
 
 ---
 
-# Where the Future Goes 
+# Bigger, Faster and Smarter 
 
+
+- 더 뛰어난 AI를 만들기 위한 경쟁 
+
+- 알고리즘의 문제? 
+
+- 더 많은 데이터를 더 영리하게 학습시키는 것의 문제 
+
+---
+background-image: url(img/whitebg.jpg)
+background-size: cover
+class: left, middle, animated, fadeIn, inverted
+
+<center>
+
+![:scale 100%](img/ark_2021_1.png)
+</center>
+.black.small[From: https://ark-invest.com/big-ideas-2021/]
 
 
 ---
-
-# Data Science Title Page 
+background-image: url(img/ark_2021_2.png)
+background-size: contain
+class: left, middle, animated, fadeIn, inverted
 
 
 ---
@@ -446,274 +472,69 @@ background-size: cover
 class: center, middle, animated, fadeIn
 ## 로그를 어떻게 의미있는 정보로 바꿀 수 있을까?  
 
-
 ---
-background-image: url(img/comm_2.gif)
-background-color: black
+background-image: url(img/whitebg.jpg)
 background-size: cover
-class: center, middle, animated, fadeIn
+class: left, middle, animated, fadeIn, inverted
+
+<center>
+
+![:scale 100%](img/20200613_TQC624.png)
+</center>
 
 ---
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/comm_2.gif)
+background-image: url(img/TSD라떼말.jpg)
 background-size: cover
-class: left, top, animated, fadeIn
-# DC as A Data Communicator 
-<br>
-<br>
-### &emsp; `r icon_rocket()` Data is nothing if its messege fails to be delivered.  
-### &emsp; `r icon_rocket()` Communication is key for data works.
+class: left, middle, animated, fadeIn, inverted
 
 ---
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/comm_3.jpg)
+background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(img/TSD라떼말.jpg)
 background-size: cover
-class: left, top, animated, fadeIn
-# Two Pillars of Communication
-<br>
-<br>
-## &thinsp; 1. Metrics 
-## &thinsp; 2. Visualization 
+class: left, middle, animated, fadeIn, inverted
 
-
-???
-
-Two areas are big issue to talk each other deeply. 
-
-Today, I'm going to touch the surface of the first. 
-
-We have a limited time. 
+.white.large[마지막 조언...]
 
 ---
-# Metrics Frequently Used
-<br>
-### &emsp; `r icon_rocket()` AU = Active Users 
-### &emsp; `r icon_rocket()` ARPU = Average Revenue Per User 
-### &emsp; `r icon_rocket()` ARPPU = Average Revenue Per Paying User 
-### &emsp; `r icon_rocket()` CLV = Customer's Life-time Value 
+# 외국어를 배우는 이유? 
+
+- (시험을 잘 보기 위해서?)
+
+- 견문과 지식을 넓히기 위해서? 
+
+- 더 많은 네트워크에 닿기 위해서? 
 
 ---
-background-image: url(img/marketing_analytics.jpg)
-background-size: cover
-class: center, middle, animated, fadeIn
-##<span style="color:black; background-color:gray">&thinsp;Conventional wisdom...&thinsp;</span> 
+# 어떤 언어를 잘 한다는 의미는? 
 
-???
+- (높은 시험 점수?)
 
-These metrics are not new. they have been used by marketing or management of telecommunication, shopping, etc. 
+- 그 나라의 언어를 이해한다. 
 
-The crucial part with game business are their 
+- 그 나라의 언어를 말하고 쓸 줄 안다. 
 
 ---
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/marketing_analytics.jpg)
-background-size: cover
-class: center, middle, animated, fadeIn
-## Speed and Reinvent 
+# 가장 중요한 외국어는? 
+
+- 컴퓨터와 대화할 수 있는 언어 
+
+- 데이터를 다루기 위해서, 알고리즘을 부리기 위해서 
+
+- 인문계든 자연계든 코딩을 피해갈 수는 없다! 
 
 ---
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/speed.jpg)
-background-size: cover
-class: left, top, animated, fadeIn
+# 외국어를 배울 때와 마찬가지로... 
 
-# Speed: Near-real Time 
-<br>
-### &emsp; `r icon_rocket()` The Speed simply matters,
-### &emsp; `r icon_rocket()` Because bugs can be devastating...
+- 보기만 할 줄 아는, 듣기만 할 줄 아는 실력은 제한적 
 
-???
+- 의사소통을 위해서 글을 쓰고 말을 하듯이 
 
-In virtual world, game, small loophole can do much much bigger damage on game service. 
-
-So, we must detect them as soon as possible. 
-
----
-background-image: url(img/L2M.gif)
-background-size: contain
-background-color: black
-class: center, middle, animated, fadeIn
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/L2M.gif)
-background-size: cover
-background-color: black
-class: center, middle, animated, fadeIn
-
-##<span style="color:black; background-color:gray"> &thinsp; While you are playing...&thinsp;</span> 
-
----
-background-image: url(img/now_1.png)
-background-size: contain
-class: center, middle, animated, fadeIn
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/now_1.png)
-background-size: contain
-class: center, middle, animated, fadeIn
-##<span style="color:black; background-color:gray"> &thinsp; We are observing players within 30 seconds time lag &thinsp;</span> 
+- 해결하려는 문제를 정의하고 이를 코딩으로 풀어봐야 한다. 
 
 
 ---
-background-image: url(img/now_2.png)
-background-size: contain
-class: center, middle, animated, fadeIn
-
-???
-
-Sorry for the masking. 
-
-Because we are very careful about numbers. 
-
-You see that, our dash board of the virtual world, we are servicing. 
-
----
-# Reinvent: Importing Useful Metrics 
-<br> 
-<br>
-## &thinsp; `r icon_rocket()` Transforming key metrics of real world 
-## &thinsp; `r icon_rocket()` Applying *proven* metrics to virtual world 
-
----
-background-image: url(img/auction_1.jpg)
-background-color: black
-background-size: contain
-class: center, middle, animated, fadeIn
-
-???
-
-Do you know what is this about? 
-
-This is auction house in game Lineage. 
-
-Players can exchange their items to Dia, in game currency. 
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/auction_1.jpg)
-background-size: contain
-class: center, middle, animated, fadeIn
-### `r icon_check()` The one and only MARKET in *Lineage M*
-### `r icon_check()` Does this look like *stock exchange*? 
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/SE.jpg)
-background-size: cover
-
-# Auction House $\approx$ Stock Exchange 
-<br>
-### &thinsp; `r icon_rocket()` An auction house in game shows the valuation of resources.
-### &thinsp; `r icon_rocket()` How to summarise such valuation in auctioning? 
-### &thinsp; `r icon_rocket()` Stock market index may be a good start! 
-
----
-# Similarity 
-<br>
-<br>
-### &thinsp; `r icon_check()` Valuation by players or traders
-### &thinsp; `r icon_check()` Pricing mechanism (auctioning & matching)
-
----
-# Difference 
-<br>
-<br>
-### &thinsp; `r icon_check()` Single market vs. Multiple markets (servers)
-### &thinsp; `r icon_check()` Unique unit vs. Variation in a unit 
-
----
-background-image: url(img/auction_pca.png)
-background-size: contain
-class: center, middle, animated, fadeIn
+# For Example 
 
 
-??? 
-
-To make index, we should fix reference point, day 0 index. 
-
-And we are producing daily or weekly index for auction house in game.
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/auction_pca.png)
-background-size: contain
-class: left, middle, animated, fadeIn
-### &thinsp; `r icon_check()` With PCA, we built composite index for users' auctioning.
-### &thinsp; `r icon_check()` We are tracking daily behaviors and trends.
-
----
-background-image: url(img/index_1.png)
-background-size: contain
-class: center, middle, animated, fadeIn
-
----
-background-image: url(img/index_2.png)
-background-size: contain
-class: center, middle, animated, fadeIn
-
----
-background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url(img/detective.jpg)
-background-size: cover
-
-# DC as A Data Detective 
-<br>
-<br>
-## &thinsp; `r icon_rocket()` There is no *magic* called MACHINE LEARNING. 
-## &thinsp; `r icon_rocket()` Smart analytics still matters  
-???
-
-Some say that machine is final and ultimate solution. 
-
-But, many problem are need to be checked by human intelligence.  
-
----
-# When Experimentation Is Not An Option 
-<br>
-### &thinsp; `r icon_rocket()` A/B test is widely used to optimize many services
-### &thinsp; `r icon_rocket()` In social events, A/B test is often controversial. 
-#### &emsp;  &emsp; &thinsp;  `r icon_check()` Consider Covid-19 vaccine A/B.
-### &thinsp; `r icon_rocket()` Statistical methods are useful. 
-
----
-# PK vs Retention
-
-## &thinsp; `r icon_rocket()` Can we fix causality?
-### &emsp; &thinsp; `r icon_check()` PK &rarr; Better Retention? <br> &emsp; &thinsp; `r icon_check()` Better Retention &rarr; PK? 
-## &thinsp; `r icon_rocket()` No conclusion without experiment design  
-
-???
-Do you know player killing, PK. It is the act of killing others in game, without any formal consent. If formal consent is reached, it called P v P. 
-
----
-# Natural Experiment
-<br>
-## &thinsp;  `r icon_rocket()` With natural experiment,<br> &emsp;&emsp; We have a randomizing machine. 
-## &thinsp; `r icon_rocket()` What is natural experiment for this problem?
-
----
-background-image: url(img/PK_2.jpg)
-background-size: cover
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url(img/PK_2.jpg)
-background-size: cover
-
-# PK for The First Time 
-<br>
-## &thinsp; `r icon_rocket()` 'Being first PKed' (FPK) tends to happen randomly. 
-## &thinsp; `r icon_rocket()` 'FPK' vs 'NOT FPK' comparison 
-## &thinsp; `r icon_rocket()` FPK is randomizing device, a natural experiment. 
-
----
-background-image: url(img/elephant_nudge.jpg)
-background-size: cover
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url(img/elephant_nudge.jpg)
-background-size: cover
-
-What is nudge? 
-
-It's lightweight suggestion by pushing someone with elbow. 
-
-# Three Nudges for You 
-<br>
-## &thinsp; `r icon_rocket()` Do 'trial and error,' again and again. 
-## &thinsp; `r icon_rocket()` Learn computer languages.
-## &thinsp; `r icon_rocket()` Use git & Share your results. 
 
 
 ---
