@@ -14,3 +14,4 @@ icon_check <- function(){
 icon_comment <- function(){
     fa("comments", fill = bullet_color)
 }
+

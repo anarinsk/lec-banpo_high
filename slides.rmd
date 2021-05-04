@@ -210,11 +210,23 @@ background-size: contain
 class: center, middle, animated, fadeIn
 
 ---
+background-image: url(img/whitebg.jpg)
+background-size: cover
+class: left, middle, animated, fadeIn, inverted
+
+<center>
+![:scale 40%](img/0_PC5BD5EMN49Z2j3z.png)
+</center>
+
+.black.small[From: https://ai.plainenglish.io/the-rise-and-fall-of-the-perceptron-c04ae53ea465]
+
+---
 class: highlight-last-item
 
-# Failure of Perceptron 
+#  Perceptron 
 
-+ 퍼셉트론이란? 하나의 층을 지닌 인공 신경망
++ 퍼셉트론이란? 
+  + 하나의 층을 지닌 인공 신경망의 온전한 알고리즘 (Frank Rosenblatt)
 
 --
 
@@ -230,7 +242,7 @@ class: left, bottom, animated, fadeIn, inverted
 ![:scale 90%](img/xor.png)
 </center>
 
-.black[.small[ From: https://wiserloner.tistory.com/245 ]]
+.black.small[From: https://wiserloner.tistory.com/245]
 
 
 ---
@@ -524,13 +536,13 @@ class: left, middle, animated, fadeIn, inverted
 ---
 # 외국어를 배울 때와 마찬가지로... 
 
-- 보기만 할 줄 아는, 듣기만 할 줄 아는 실력은 제한적 
+- 보기만 할 줄 아는, 듣기만 할 줄 아는 외국어 실력은 온전하지 않다.  
 
 - 의사소통을 위해서 글을 쓰고 말을 하듯이 
 
 - 해결하려는 문제를 정의하고 이를 코딩으로 풀어봐야 한다. 
 
-- 혼자말이 되지 않으려면 협업 도구에 익숙해지자! 
+- 혼자말이 되지 않으려면 도구에 익숙해지고, 직접 뛰어들자! 
 
 
 ---
@@ -546,6 +558,11 @@ class: left, middle, animated, fadeIn, inverted
 
 - (좀 더 가고 싶다면) Java, Javascript, React, Go 
 
+
+---
+background-image: url(img/git_github.jpg)
+background-size: cover
+class: left, middle, animated, fadeIn, inverted
 
 ---
 # 방문해 볼 곳 
