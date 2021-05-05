@@ -43,20 +43,23 @@ library(xaringanthemer)
   orange = "#ff8811",
   green = "#136f63",
   white = "#FFFFFF")
-)
+  )
 source('small_bites.R')
 ```
 
 layout: true
-class: top, left, spaced, animated
+class: top left spaced animated
 
 ---
 background-image: url(img/sword_2.jpg)
 background-size: cover
+class: fadeIn
 
 ---
+class: fadeIn
 background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/ncsoft2.jpg)
 background-size: cover
+
 
 # Who am I  
 <br>
@@ -81,13 +84,13 @@ class: highlight-last-item
 ---
 background-image: url(img/Data-Center_wrong.jpg)
 background-size: cover
-class: center, middle, animated, fadeIn
+class: center middle animated fadeIn
 # <span style="color:black; background-color:gray">&thinsp;Data Center?&thinsp;</span>
 
 ---
 background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/Data-Center_wrong.jpg)
 background-size: cover
-class: center, middle, animated, fadeIn
+class: center middle animated fadeIn
 
 # 부서 이름입니다만...
 

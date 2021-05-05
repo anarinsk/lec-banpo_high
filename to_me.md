@@ -14,7 +14,10 @@ https://github.com/gadenbuie/xaringanthemer
 https://pkg.garrickadenbuie.com/xaringanthemer/articles/xaringanthemer.html
 https://www.garrickadenbuie.com/blog/better-progressive-xaringan/?panelset=r-markdown
 
-- 컴파일 없이 바로바로 보자. https://statkclee.github.io/comp_document/ds-presn.html
++ 컴파일 없이 바로바로 보자. https://statkclee.github.io/comp_document/ds-presn.html
++ 애니메이션 예제. https://animate.style/ 
+    + css/animiate.css 교체 
+
 
 ### ML Example 
 

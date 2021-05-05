@@ -1,4 +1,5 @@
 library(fontawesome)
+#library(xaringanExtra)
 
 bullet_color = "white"
 
@@ -15,3 +16,4 @@ icon_comment <- function(){
     fa("comments", fill = bullet_color)
 }
 
+1
