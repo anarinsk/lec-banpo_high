@@ -9,7 +9,7 @@ output:
     #yolo: true
     #self_contained: true
     css: 
-      #- "css/animate.css"
+      - "css/animate.css"
       #- "css/title.css"
       - "css/progressbar.css"
       #- "css/custom.css"
@@ -48,7 +48,7 @@ source('small_bites.R')
 ```
 
 layout: true
-class: top, left, spaced, animated, fadeIn
+class: top, left, spaced, animated, bounceInRight
 
 ---
 background-image: url(img/sword_2.jpg)
@@ -117,7 +117,7 @@ background-size: cover
 class: center, middle
 background-image: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)),url(img/peta.jpg)
 background-size: cover
-class: center, left, animated, fadeIn
+class: center, left, fadeIn
 <br>
 <br>
 <br>
@@ -130,7 +130,7 @@ class: center, left, animated, fadeIn
 ---
 background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/question-marks.jpg)
 background-size: cover
-class: fadeIn
+class: top, left, fadeIn
 # Questions for You  
 
 --
@@ -169,7 +169,7 @@ background-size: cover
 .biggitem[(Too Short) History of AI]
 
 ---
-class: highlight-last-item
+class: top, left, highlight-last-item, fadeIn
 
 # 인공신경망(artificial neural net)
 
@@ -177,7 +177,7 @@ class: highlight-last-item
 
 --
 
-+ 인간의 신경망이 작동하는 방식을 본딴 알고리즘 
++ 인간의 신경망이 작동하는 방식을 본딴 알고리즘
 
 
 ---
@@ -221,16 +221,18 @@ class: left, middle, animated, fadeIn, inverted
 .black.small[From: https://ai.plainenglish.io/the-rise-and-fall-of-the-perceptron-c04ae53ea465]
 
 ---
-class: highlight-last-item
+class: highlight-last-item, fadeIn
 
 #  Perceptron 
 
 + 퍼셉트론이란? 
+
   + 하나의 층을 지닌 인공 신경망의 온전한 알고리즘 (Frank Rosenblatt)
 
 --
 
 + XOR를 분류할 수 있는가? 
+
   + XOR: Exclusive OR 
 
 ---
@@ -246,7 +248,7 @@ class: left, bottom, animated, fadeIn, inverted
 
 
 ---
-class: highlight-last-item
+class: highlight-last-item, fadeIn
 
 # Expert System 
 
@@ -273,7 +275,7 @@ class: left, middle, animated, fadeIn, inverted
 https://moral-robots.com/technology/what-are-expert-systems/]
 
 ---
-class: highlight-last-item
+class: highlight-last-item, fadeIn
 
 # Expert System의 한계  
 
@@ -428,7 +430,7 @@ class: left, middle, animated, fadeIn, inverted
 
 
 ---
-class: highlight-last-item
+class: highlight-last-item, fadeIn
 
 # 데이터는 쓰레기에 불과하다... 
 
@@ -546,6 +548,8 @@ class: left, middle, animated, fadeIn, inverted
 
 
 ---
+class: fadeIn 
+
 # 꼭 알면 좋을 것 
 
 - Git / Github 
