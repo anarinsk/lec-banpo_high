@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Data in Wonderland</title>
+    <title>Hitchhiker’s Guide to AI</title>
     <meta charset="utf-8" />
     <meta name="author" content="허준석 Jun-sok Huhh / NCSOFT" />
-    <link href="libs/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/animate.css" type="text/css" />
-    <link rel="stylesheet" href="css/xaringan-themer.css" type="text/css" />
-    <link rel="stylesheet" href="css/title.css" type="text/css" />
+    <script src="libs/header-attrs-2.7.13/header-attrs.js"></script>
     <link rel="stylesheet" href="css/progressbar.css" type="text/css" />
-    <link rel="stylesheet" href="css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="css/fonts.css" type="text/css" />
-    <link rel="stylesheet" href="css/title-slide.css" type="text/css" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="css/xthemer_custom.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Data in Wonderland
+# Hitchhiker’s Guide to AI
+## 혹은 인문사회계 학생을 위한 가이드 투어
 ### 허준석 Jun-sok Huhh / NCSOFT
-### 2020/12/08 (updated: 2020-12-06)
+### 2021/05/14 (updated: 2021-05-05)
 
 ---
 
@@ -27,26 +24,11 @@ class: center, middle, inverse, title-slide
 
 
 layout: true
-class: top, left, spaced, top, animated, fadeIn
+class: top, left, spaced, animated, fadeIn
 
 ---
 background-image: url(img/sword_2.jpg)
 background-size: cover
-
-???
-
-Have you seen this? 
-
-This is the moment of our company. 
-
-This appears in MLB website on next day of the championship match. 
-
-The sword is 집행검, The most powerful weapon in Lineage series. 
-
-Some news men talked The model 집행검 is expensive, but they didn't know that virtual 집행검 is much more expensive than the real one. 
-
-What's your price of the sword? There was a record that 집행검 is traded by more than 50 T USD. 
-
 
 ---
 background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/ncsoft2.jpg)
@@ -55,34 +37,22 @@ background-size: cover
 # Who am I  
 &lt;br&gt;
 &lt;br&gt;
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> PhD in Economics (evolutionary game theory)
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Data Center, Lead (Since 2019)
+.bigitem[<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:white;overflow:visible;position:relative;"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> &amp;thinsp; PhD in Economics (evolutionary game theory)]
 
-???
-
-I'm PhD in Economics. My major reseach is about evolutionary game theory. NOT game. 
-Anyway, game is the key word of my life. 
-
-Now, I'm the lead or head(in Korean English), of Data Center, NCSOFT Korea. 
+.bigitem[<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:white;overflow:visible;position:relative;"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> &amp;thinsp; Data Center, Lead (Since 2019)]
 
 ---
+class: highlight-last-item
 
-# Today Talk  
+# 오늘 나눌 이야기 
 
-### &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> How game data is collected
-### &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Three roles of DC
-### &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Some nudges for you
-### &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Q &amp; A (if there is any)
+.bigitem[&amp;thinsp; <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:white;overflow:visible;position:relative;"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> &amp;thinsp; AI 어떻게 흘겨볼 것이냐?]
 
-???
+.bigitem[&amp;thinsp; <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:white;overflow:visible;position:relative;"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> &amp;thinsp; 데이터 과학, 이 시대의 기본기]
+ 
+.bigitem[&amp;thinsp; <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:white;overflow:visible;position:relative;"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> &amp;thinsp; 인문사회계 학생들에게] 
 
-Today, topics of my talk has three parts. 
-
-One, I give you some description of game data, what and how they are collected. 
-
-Two, I give you three main roles of DC. 
-
-Three, I give you three recommendation if you are interested in working as data scientists or data engineers or whatever data jobs. 
+.bigitem[&amp;thinsp; <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:white;overflow:visible;position:relative;"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> &amp;thinsp; 질의 / 응답 (있다면...)]
 
 ---
 background-image: url(img/Data-Center_wrong.jpg)
@@ -95,36 +65,23 @@ background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/Data
 background-size: cover
 class: center, middle, animated, fadeIn
 
-# It's just a name of division. 
+# 부서 이름입니다만...
 
 ---
-# Data Center(DC) of NCSOFT
+# Data Center에서 무엇을 하나요?
 
-## &amp;thinsp; The work of DC includes 
-### &amp;emsp; &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> mananging data and its softwere infrastructure
-### &amp;emsp; &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> doing analytics with data 
-### &amp;emsp; &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> communucating insights &amp; helping decision making.
++ 떨어지는 로그 데이터를 관리하기 위한 소프트웨어 기반 유지 
+
++ 데이터로 분석 하기 
+
++ 분석된 데이터로 커뮤니케이션 하기 
   
 ---
 class: left, top
 background-image: url(img/dc-infra.png)
 background-size: contain
 
-# Data Volume of DC
-
-
-???
-
-I searched in Google, 
-
-How many students and professors are in your school... 
-
-Google told me the number around 5 thousands.
-
-If we assume that 1 Terabyte hard disk for each one, 
-
-Data store in NCSOFT is bigger than that. 
-
+.bigitem[다루는 데이터 규모]
 
 ---
 class: left, top
@@ -146,18 +103,6 @@ class: center, left, animated, fadeIn
 ### 1 GB = `\({\rm 1KB}^6 \approx 10^{3+6}\)` Byte
 
 
-???
-
-This is the reason that you see size of your drive is less than the spec. 
-
-The maker of drive shows you decimal capacity. 
-
-But, Windows shows you 1 KB based on binary 1 Byte. 
-
-That is to say, 
-
-For 1 TB in decimal is around 976GB... 
-
 ---
 background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/question-marks.jpg)
 background-size: cover
@@ -165,80 +110,326 @@ class: fadeIn
 # Questions for You  
 
 --
-## &amp;emsp;<i class="fas  fa-comments " style="color:yellow;"></i> What is (Big) Data?
+
+.bigitem[&amp;thinsp; <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:white;overflow:visible;position:relative;"><path d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"/></svg> &amp;thinsp; AI 하면 무엇이 떠오르나요?] 
 
 --
-## &amp;emsp;<i class="fas  fa-comments " style="color:yellow;"></i> Think any data you've handled. 
+
+.bigitem[&amp;thinsp; <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:white;overflow:visible;position:relative;"><path d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"/></svg> &amp;thinsp; AI는 정확한 표현인가요?]
 
 --
-## &amp;emsp;<i class="fas  fa-comments " style="color:yellow;"></i> How big is big?
 
---
-## &amp;emsp;<i class="fas  fa-comments " style="color:yellow;"></i> Can you define data of any kind? 
+.bigitem[&amp;thinsp; <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:white;overflow:visible;position:relative;"><path d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"/></svg> &amp;thinsp; 우리가 매일 접하고 있는 AI는 무엇인가요?] 
 
 ---
-background-image: url(img/excel-like.jpg)
+# Fundamental Q for AI 
+
+.pull-left[
+![](img/Painting_of_David_Hume.jpg)
+]
+
+.pull-right[
+
+" &lt;br /&gt;
+우리가 본 것에서 시작한 일반화를 보지 못한 것까지 적용하는 일은 어떻게 정당화할 수 있는가? &lt;br /&gt;
+
+"
+
+]
+
+---
+class: left, top
+background-image: url(img/terminator.gif)
+background-size: cover
+
+.biggitem[(Too Short) History of AI]
+
+---
+class: highlight-last-item
+
+# 인공신경망(artificial neural net)
+
++ Mcculloch &amp; Pitts (1943) 
+
+--
+
++ 인간의 신경망이 작동하는 방식을 본딴 알고리즘 
+
+
+---
+background-image: url(img/1_3nMF3cYJDopFnVagAK7Thw.png)
 background-size: cover
 class: center, middle, animated, fadeIn
 
-#&lt;span style="color:black; background-color:gray"&gt;&amp;thinsp;Look familiar?&amp;thinsp;&lt;/span&gt; 
-
-???
-
-Maybe you are used to this table. 
-
-Excel is your basic data format. 
-
-
-
 ---
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/excel-like.jpg)
+background-image: url(img/qrrettswrqx.gif)
 background-size: cover
 class: center, middle, animated, fadeIn
 
-# It's organized and tabulated one. 
+---
+background-image: url(img/Neurons_all_16_large_BlackBG-Reid-2.jpg)
+background-size: cover
+class: center, middle, animated, fadeIn
 
-???
+---
+background-image: url(img/whitebg.jpg)
+background-size: cover
+class: left, bottom, animated, fadeIn
 
-Your first data analytics may start with excel-like ones. 
-
-Unfortunately, if your have such a good organized data, you are almost at the end of the finish line. 
+![](img/warren_walter.png) &lt;br /&gt;
+.black.small[From: https://brunch.co.kr/@hvnpoet/61]
 
 
 ---
-# Data May Be A Pile of 'Garbage...'
-&lt;br&gt;
-### &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> Usually data are not (cannot be) so *clean*. 
-### &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> Something organized or tabulated &amp;rarr; You got the picture of data. 
-### &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> Big data are generally unorganized, unstructured, and messy.
+background-image: url(img/neural_net.png)
+background-size: contain
+class: center, middle, animated, fadeIn
+
+---
+background-image: url(img/whitebg.jpg)
+background-size: cover
+class: left, middle, animated, fadeIn, inverted
+
+&lt;center&gt;
+![:scale 40%](img/0_PC5BD5EMN49Z2j3z.png)
+&lt;/center&gt;
+
+.black.small[From: https://ai.plainenglish.io/the-rise-and-fall-of-the-perceptron-c04ae53ea465]
+
+---
+class: highlight-last-item
+
+#  Perceptron 
+
++ 퍼셉트론이란? 
+  + 하나의 층을 지닌 인공 신경망의 온전한 알고리즘 (Frank Rosenblatt)
+
+--
+
++ XOR를 분류할 수 있는가? 
+  + XOR: Exclusive OR 
+
+---
+background-image: url(img/whitebg.jpg)
+background-size: cover
+class: left, bottom, animated, fadeIn, inverted
+
+&lt;center&gt;
+![:scale 90%](img/xor.png)
+&lt;/center&gt;
+
+.black.small[From: https://wiserloner.tistory.com/245]
 
 
+---
+class: highlight-last-item
+
+# Expert System 
+
++ 인간의 논리적 추론 과정을 모방 
+
+--
+
++ 주어진 사실(공리)에서 다른 형태의 결론(정리)를 끌어내는 추론 과정을 적용
+
+--
+
++ 이를 자동화할 수 있다면? 
+
+---
+background-image: url(img/whitebg.jpg)
+background-size: cover
+class: left, middle, animated, fadeIn, inverted
+
+&lt;center&gt;
+![:scale 100%](img/expert-system.png)
+&lt;/center&gt; 
+
+.black.small[From:
+https://moral-robots.com/technology/what-are-expert-systems/]
+
+---
+class: highlight-last-item
+
+# Expert System의 한계  
+
++ 인간의 지식은 얼마나 규칙으로 만들 수 있는가? (지식 추출의 병목현상)
+
+  + Tacit vs Explicit 
+
+--
+
++ 지식은 계속해서 변한다! 
+
+  + 이를 유연하게 반영할 수 있는 일반적인 지적, 공학적 구조가 있을까? 
+
+--
+
++ 의외로 단순하지 않더라... 
+
+  + 익스퍼트 시스템 기반 번역 알고리즘 및 소프트웨어의 처참한 실패 
+
+
+---
+background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url(img/night-king-hbo-got-hack-740x432.png)
+background-size: cover
+class: center, middle, animated, fadeIn
+
+.biggitem[80년대 그리고 90년대의 AI 겨울]
+
+---
+background-image: url(img/whitebg.jpg) 
+background-size: cover
+class: left, bottom, animated, fadeIn, inverted
+
+&lt;center&gt;
+![:scale 100%](img/three-types-of-ai.png)
+&lt;/center&gt; 
+
+.black.small[From:
+https://www.f5.com/es_es/company/blog/aI-and-the-role-of-application-services]
+
+---
+
+# AI의 부활 
+
+## data! data! data! 
+
++ Internet! Internet! Internet!
++ Yahoo, Google, Facebook...
++ 엄청난 량의 데이터가 폭발적으로 쌓이기 시작했다.  
+
+--
+
+## 쉬워진 하드웨어의 확장
+
++ 클라우드 컴퓨팅의 등장 
++ 동원 가능한 대규모 '범용' 머신의 등장 
+
+---
+background-image: url(img/whitebg.jpg)
+background-size: cover
+class: left, middle, animated, fadeIn, inverted
+
+&lt;center&gt;
+![:scale 80%](img/Internet-users-by-world-region.png)
+&lt;/center&gt;
+
+.black.small[From:
+https://ourworldindata.org/grapher/internet-users-by-world-region]
+
+---
+
+# 딥러닝의 부상 
+
++ 이미지 인식 분야에서 먼저 탁월한 성과를 거두기 시작
+
++ 방법론과 이론은 2000년 초반에 이미 완성
+  + 다층 신경망(multi-layer neural net)
+  + 역전파 (back propagation)
+
++ 적용 및 최적화는 2010년대에 걸쳐 눈부시게 발전 
+
+---
+background-image: url(img/A-biological-neuron-in-comparison-to-an-artificial-neural-network-a-human-neuron-b.png)
+background-size: contain
+class: left, bottom, animated, fadeIn
+
+
+---
+background-image: url(img/SE_Nov_Article_-figure-1.jpg)
+background-size: contain
+class: left, middle, animated, fadeIn, inverted
+
+
+---
+
+# 딥러닝의 약진 
+
++ 이미지 인식 분야에서 큰 성공을 거두고 다른 분야로 진출
+
++ 그럴 듯한 가상 이미지 생성 (GAN) [LINK](https://www.tensorflow.org/tutorials/generative/dcgan) 
+
++ 음성 인식 
+
++ 강화 학습 (알파고, 알파스타, 알파폴드2) [LINK](https://www.tensorflow.org/agents/tutorials/0_intro_rl)
+
++ 자연어 처리 (GPT-3) [자세한](https://www.youtube.com/watch?v=MV1l2JPAxVY) [간략한](https://www.youtube.com/watch?v=YTKjtKMGCwA)
+
+---
+background-image: url(img/whitebg.jpg)
+background-size: cover
+class: left, middle, animated, fadeIn, inverted
+
+&lt;center&gt;
+![:scale 40%](img/20200808_STC657.png)
+
+
+---
+background-image: url(img/whitebg.jpg)
+background-size: cover
+class: left, middle, animated, fadeIn, inverted
+
+&lt;center&gt;
+![:scale 90%](img/20200613_TQC622.png)
+
+
+---
+
+# Bigger, Faster and Smarter 
+
+
+- 더 뛰어난 AI를 만들기 위한 경쟁 
+
+- 알고리즘의 문제? 
+
+- 더 많은 데이터를 더 영리하게 학습시키는 것의 문제 
+
+---
+background-image: url(img/whitebg.jpg)
+background-size: cover
+class: left, middle, animated, fadeIn, inverted
+
+&lt;center&gt;
+
+![:scale 100%](img/ark_2021_1.png)
+&lt;/center&gt;
+.black.small[From: https://ark-invest.com/big-ideas-2021/]
+
+
+---
+background-image: url(img/ark_2021_2.png)
+background-size: contain
+class: left, middle, animated, fadeIn, inverted
+
+
+---
+class: highlight-last-item
+
+# 데이터는 쓰레기에 불과하다... 
+
+
++ '빅' 데이터란 무엇인가? 
+
+--
+
++ 데이터가 그냥 쌓여 있다고 통찰이 마법같이 떠오를까? 
+
+--
+
++ 데이터란 보는 사람의 시선에 따라 조직되기 마련이다. 
 
 ---
 background-image: url(img/gameplaying.gif)
 background-size: cover
 class: left, top, animated, fadeIn
-### &lt;span style="color:black; background-color:gray"&gt;&amp;thinsp;When you playing game...&amp;thinsp;&lt;/span&gt; 
+### &lt;span style="color:black; background-color:gray"&gt;&amp;thinsp;당신이 게임을 즐길 때... game...&amp;thinsp;&lt;/span&gt; 
 
 ---
 background-image: url(img/NC_MMORPG.png)
 background-size: contain
 class: left, top, animated, fadeIn
 ### The other side of playing 
-
-???
-
-For online games, your play should be transmitted to the server you joined. 
-
-The results of game playing record continuously via pre-defined format. 
-
-This record tracks your history, gains, losses, fights and cooperation among players of your play.
-
-Side questions. 
-
-How many servers are there in 리니지M? 
-
-Tell me your guess. 
 
 ---
 background-image: url(img/hdfs.png)
@@ -249,295 +440,112 @@ class: left, top, animated, fadeIn
 background-image: url(img/log.png)
 background-size: cover
 class: center, middle, animated, fadeIn
-##&lt;span style="color:black; background-color:gray"&gt;&amp;thinsp;logs are ...&amp;thinsp;&lt;/span&gt; 
-
-???
-
-As you see, logs are just a piles of text. 
+##&lt;span style="color:black; background-color:gray"&gt;&amp;thinsp;logs라는 녀석은...&amp;thinsp;&lt;/span&gt; 
 
 ---
 background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/log.png)
 background-size: cover
 class: center, middle, animated, fadeIn
-## meaningless (if you don't get to their secret)
+## 비밀을 알지 못하면 아무 의미 없다. 
 
-???
-
-To someone, it is meaningless one.
 
 ---
 background-image: url(img/matrix_neo.gif)
 background-size: cover
 class: center, middle, animated, fadeIn
 
-???
-
-How to turn mountain of infos into valuable ones?   
-
 ---
 background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/matrix_neo.gif)
 background-size: cover
 class: center, middle, animated, fadeIn
-## How to transform logs into meaningful ones? 
+## 로그를 어떻게 의미있는 정보로 바꿀 수 있을까?  
 
 ---
-background-image: url(img/datacleansing.png)
+background-image: url(img/whitebg.jpg)
 background-size: cover
-class: center, middle, animated, fadeIn
+class: left, middle, animated, fadeIn, inverted
 
-???
+&lt;center&gt;
 
-The beginning, and I dare to say that, The single most important job of data work is cleaning data. 
-
-So, we have to be a janitor of data. 
+![:scale 100%](img/20200613_TQC624.png)
+&lt;/center&gt;
 
 ---
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/datacleansing.png)
+background-image: url(img/TSD라떼말.jpg)
 background-size: cover
-class: left, top, animated, fadeIn
-
-# DC as A Data Janitor
-&lt;br&gt;
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Think what a janitor does.
-### &amp;emsp; &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> All of janitor jobs are about preparing something for the work 
-### &amp;emsp; &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> Any automated system cannot process log without human effort.
-### &amp;emsp; &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> Around 90% of data works is janitor jobs.   
+class: left, middle, animated, fadeIn, inverted
 
 ---
-# What Data Engineers do in DC 
-&lt;br&gt;
-### &amp;emsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Managing our custom Hadoop system
-### &amp;emsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Developing data tools and services 
-### &amp;emsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Operating day-to-day data stream  
-
-
-???
-
-Hadoop is one of standards in bigdata technology. It is open source. But to utilize the power of the Hadoop, a tons of research and effort is needed. 
-
-We also develops inhouse tools and services customized for our game services. 
-
-Data should be managed in ecosystems. So operation is important. Each part get ready to gaurantee the whole system work smoothly.  
-
-
----
-background-image: url(img/comm_2.gif)
-background-color: black
+background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(img/TSD라떼말.jpg)
 background-size: cover
-class: center, middle, animated, fadeIn
+class: left, middle, animated, fadeIn, inverted
+
+.white.large[마지막 조언...]
 
 ---
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/comm_2.gif)
+# 외국어를 배우는 이유? 
+
+- (시험을 잘 보기 위해서?)
+
+- 견문과 지식을 넓히기 위해서? 
+
+- 더 많은 네트워크에 닿기 위해서? 
+
+---
+# 어떤 언어를 잘 한다는 의미는? 
+
+- (높은 시험 점수?)
+
+- 그 나라의 언어를 이해한다. 
+
+- 그 나라의 언어를 말하고 쓸 줄 안다. 
+
+---
+# 가장 중요한 외국어는? 
+
+- 컴퓨터와 대화할 수 있는 언어 
+
+- 데이터를 다루기 위해서, 알고리즘을 부리기 위해서 
+
+- 인문계든 자연계든 코딩을 피해갈 수는 없다! 
+
+---
+# 외국어를 배울 때와 마찬가지로... 
+
+- 보기만 할 줄 아는, 듣기만 할 줄 아는 외국어 실력은 온전하지 않다.  
+
+- 의사소통을 위해서 글을 쓰고 말을 하듯이 
+
+- 해결하려는 문제를 정의하고 이를 코딩으로 풀어봐야 한다. 
+
+- 혼자말이 되지 않으려면 도구에 익숙해지고, 직접 뛰어들자! 
+
+
+---
+# 꼭 알면 좋을 것 
+
+- Git / Github 
+
+--
+
+- Python, R, Visual Studio Code  
+
+--
+
+- (좀 더 가고 싶다면) Java, Javascript, React, Go 
+
+
+---
+background-image: url(img/git_github.jpg)
 background-size: cover
-class: left, top, animated, fadeIn
-# DC as A Data Communicator 
-&lt;br&gt;
-&lt;br&gt;
-### &amp;emsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Data is nothing if its messege fails to be delivered.  
-### &amp;emsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Communication is key for data works.
+class: left, middle, animated, fadeIn, inverted
 
 ---
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/comm_3.jpg)
-background-size: cover
-class: left, top, animated, fadeIn
-# Two Pillars of Communication
-&lt;br&gt;
-&lt;br&gt;
-## &amp;thinsp; 1. Metrics 
-## &amp;thinsp; 2. Visualization 
+# 방문해 볼 곳 
 
+- [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb)
 
-???
-
-Two areas are big issue to talk each other deeply. 
-Today, I'm going to touch the surface of the first. 
-We have a limited time. 
-
----
-# Metrics Frequently Used
-&lt;br&gt;
-### &amp;emsp; <i class="fas  fa-broom " style="color:steelblue;"></i> AU = Active Users 
-### &amp;emsp; <i class="fas  fa-broom " style="color:steelblue;"></i> ARPU = Average Revenue Per User 
-### &amp;emsp; <i class="fas  fa-broom " style="color:steelblue;"></i> ARPPU = Average Revenue Per Paying User 
-### &amp;emsp; <i class="fas  fa-broom " style="color:steelblue;"></i> CLV = Customer's Life-time Value 
-
----
-background-image: url(img/marketing_analytics.jpg)
-background-size: cover
-class: center, middle, animated, fadeIn
-##&lt;span style="color:black; background-color:gray"&gt;&amp;thinsp;Conventional wisdom...&amp;thinsp;&lt;/span&gt; 
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/marketing_analytics.jpg)
-background-size: cover
-class: center, middle, animated, fadeIn
-## Speed and Reinvent 
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/speed.jpg)
-background-size: cover
-class: left, top, animated, fadeIn
-
-# Speed: Near-real Time 
-&lt;br&gt;
-### &amp;emsp; <i class="fas  fa-broom " style="color:steelblue;"></i> The Speed simply matters,
-### &amp;emsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Because bugs can be devastating...
-
----
-background-image: url(img/L2M.gif)
-background-size: contain
-background-color: black
-class: center, middle, animated, fadeIn
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/L2M.gif)
-background-size: cover
-background-color: black
-class: center, middle, animated, fadeIn
-
-##&lt;span style="color:black; background-color:gray"&gt; &amp;thinsp; While you are playing...&amp;thinsp;&lt;/span&gt; 
-
----
-background-image: url(img/now_1.png)
-background-size: contain
-class: center, middle, animated, fadeIn
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/now_1.png)
-background-size: contain
-class: center, middle, animated, fadeIn
-##&lt;span style="color:black; background-color:gray"&gt; &amp;thinsp; We are observing players within 30 seconds time lag &amp;thinsp;&lt;/span&gt; 
-
-
----
-background-image: url(img/now_2.png)
-background-size: contain
-class: center, middle, animated, fadeIn
-
----
-# Reinvent: Importing Useful Metrics 
-&lt;br&gt; 
-&lt;br&gt;
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Transforming key metrics of real world 
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Applying *proven* metrics to virtual world 
-
----
-background-image: url(img/auction_1.jpg)
-background-color: black
-background-size: contain
-class: center, middle, animated, fadeIn
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/auction_1.jpg)
-background-size: contain
-class: center, middle, animated, fadeIn
-### <i class="fas  fa-check " style="color:steelblue;"></i> The one and only MARKET in *Lineage M*
-### <i class="fas  fa-check " style="color:steelblue;"></i> Does this look like *stock exchange*? 
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/SE.jpg)
-background-size: cover
-
-# Auction House `\(\approx\)` Stock Exchange 
-&lt;br&gt;
-### &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> An auction house in game shows the valuation of resources.
-### &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> How to summarise such valuation in auctioning? 
-### &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Stock market index may be a good start! 
-
----
-# Similarity 
-&lt;br&gt;
-&lt;br&gt;
-### &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> Valuation by players or traders
-### &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> Pricing mechanism (auctioning &amp; matching)
-
----
-# Difference 
-&lt;br&gt;
-&lt;br&gt;
-### &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> Single market vs. Multiple markets (servers)
-### &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> Unique unit vs. Variation in a unit 
-
----
-background-image: url(img/auction_pca.png)
-background-size: contain
-class: center, middle, animated, fadeIn
-
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),url(img/auction_pca.png)
-background-size: contain
-class: left, middle, animated, fadeIn
-### &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> With PCA, we built composite index for users' auctioning.
-### &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> We are tracking daily behaviors and trends.
-
----
-background-image: url(img/index_1.png)
-background-size: contain
-class: center, middle, animated, fadeIn
-
----
-background-image: url(img/index_2.png)
-background-size: contain
-class: center, middle, animated, fadeIn
-
----
-background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url(img/detective.jpg)
-background-size: cover
-
-# DC as A Data Detective 
-&lt;br&gt;
-&lt;br&gt;
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> There is no *magic* called MACHINE LEARNING. 
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Smart analytics still matters  
-
----
-# When Experimentation Is Not An Option 
-&lt;br&gt;
-### &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> A/B test is widely used to optimize many services
-### &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> In social events, A/B test is often controversial. 
-#### &amp;emsp;  &amp;emsp; &amp;thinsp;  <i class="fas  fa-check " style="color:steelblue;"></i> Consider Covid-19 vaccine A/B.
-### &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Statistical methods are useful. 
-
----
-# PK vs Retention
-
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Can we fix causality?
-### &amp;emsp; &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> PK &amp;rarr; Better Retention? &lt;br&gt; &amp;emsp; &amp;thinsp; <i class="fas  fa-check " style="color:steelblue;"></i> Better Retention &amp;rarr; PK? 
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> No conclusion without experiment design  
-
----
-# Natural Experiment
-&lt;br&gt;
-## &amp;thinsp;  <i class="fas  fa-broom " style="color:steelblue;"></i> With natural experiment,&lt;br&gt; &amp;emsp;&amp;emsp; We have a randomizing machine. 
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> What is natural experiment for this problem?
-
----
-background-image: url(img/PK_2.jpg)
-background-size: cover
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url(img/PK_2.jpg)
-background-size: cover
-
-# PK for The First Time 
-&lt;br&gt;
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> 'Being first PKed' (FPK) tends to happen randomly. 
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> 'FPK' vs 'NOT FPK' comparison 
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> FPK is randomizing device, a natural experiment. 
-
----
-background-image: url(img/elephant_nudge.jpg)
-background-size: cover
-
----
-background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url(img/elephant_nudge.jpg)
-background-size: cover
-
-# Three Nudges for You 
-&lt;br&gt;
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Do 'trial and error,' again and again. 
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Learn computer languages.
-## &amp;thinsp; <i class="fas  fa-broom " style="color:steelblue;"></i> Use git &amp; Share your results. 
+- [Github](https://github.com/)
 
 
 ---
@@ -554,16 +562,19 @@ background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(img/sourc
 background-size: cover
 class: left, top, animated, fadeIn
 
-# References 
+# 더 관심이 있다면... 
 
-- [The source of this presentation](https://github.com/anarinsk/lec-unist-nc_dc)
-- [DANBI: Making Index of Auction House](https://danbi-ncsoft.github.io/works/2020/08/13/works-econ_index_1.html)
-- [DANBI: Causality: PK vs Retention](https://danbi-ncsoft.github.io/works/2020/06/17/works-pk_analysis.html)
+- 코딩 없이 ML 체험하기 [LINK](https://teachablemachine.withgoogle.com/)
+
+- ML 기본 모델 해설 [LINK](https://medium.com/@jongdae.lim/%EA%B8%B0%EA%B3%84-%ED%95%99%EC%8A%B5-machine-learning-%EC%9D%80-%EC%A6%90%EA%B2%81%EB%8B%A4-part-1-9a0297198ad8)
+
+- ML의 역사와 이론 [LINK](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=87212039)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
 <script>var slideshow = remark.create({
-"ratio": "16:10",
+"ratio": "16:9",
 "highlightStyle": "github",
 "highlightLines": true,
 "slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>`\n",
