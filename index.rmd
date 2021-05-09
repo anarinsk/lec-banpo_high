@@ -273,7 +273,7 @@ background-size: cover
 class: left, middle, animated, fadeIn, inverted
 
 <center>
-![:scale 100%](img/expert-system.png)
+![:scale 100%](img/Expert-system.png)
 </center> 
 
 .black.small[From:

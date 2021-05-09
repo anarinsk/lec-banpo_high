@@ -1,4 +1,4 @@
-# Xaringan for UNIST talk on NCSOFT datacenter 
+# Xaringan for Banpo High School of South Korea 
 
 
 # Resources 
