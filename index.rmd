@@ -379,11 +379,11 @@ class: left, middle, animated, fadeIn, inverted
 
 + 이미지 인식 분야에서 큰 성공을 거두고 다른 분야로 진출
 
-+ 그럴 듯한 가상 이미지 생성 (GAN) [LINK](https://www.tensorflow.org/tutorials/generative/dcgan) 
++ 그럴 듯한 가상 이미지 생성 (GAN)[&emsp; `r icon_link()`](https://www.tensorflow.org/tutorials/generative/dcgan) 
 
 + 음성 인식 
 
-+ 강화 학습 (알파고, 알파스타, 알파폴드2) [LINK](https://www.tensorflow.org/agents/tutorials/0_intro_rl)
++ 강화 학습 (알파고, 알파스타, 알파폴드2) [&emsp; `r icon_link()`](https://www.tensorflow.org/agents/tutorials/0_intro_rl)
 
 + 자연어 처리 (GPT-3) [자세한](https://www.youtube.com/watch?v=MV1l2JPAxVY) [간략한](https://www.youtube.com/watch?v=YTKjtKMGCwA)
 
@@ -580,6 +580,23 @@ class: left, middle, animated, fadeIn, inverted
 
 - [Github](https://github.com/)
 
+---
+# One More 잔소리...
+
+- "엑셀"에 고착되지 마세요! 
+
+- 스프레드시트는 매우 직관적이지만, 매우 위험하고 오늘날의 데이터를 다루기에 그리 적합하지 않습니다. 
+
+- 쓰지 않는 것을 기본으로 하고, 어쩔 수 없을 때 쓰면 좋겠습니다. 
+
+---
+# Excel이 낳은 세계적인 문제들 
+
+- 16,000 명의 코로나 바이러스 환자 누락 (2020, 영국) [&emsp; `r icon_link()`](https://www.theverge.com/2020/10/5/21502141/uk-missing-coronavirus-cases-excel-spreadsheet-error)
+
+- 약 3,500 개의 유전자 관련 학술 논문 오류 (2016) [&emsp; `r icon_link()`](https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates)
+
+- JP Morgan의 6 B USD 손실 (2012) [&emsp; `r icon_link()`](https://www.businessinsider.com/excel-partly-to-blame-for-trading-loss-2013-2)
 
 ---
 layout:false
@@ -597,8 +614,8 @@ class: left, top, animated, fadeIn
 
 # 더 관심이 있다면... 
 
-- 코딩 없이 ML 체험하기 [LINK](https://teachablemachine.withgoogle.com/)
+- 코딩 없이 ML 체험하기 [&emsp; `r icon_link()`](https://teachablemachine.withgoogle.com/)
 
-- ML 기본 모델 해설 [LINK](https://medium.com/@jongdae.lim/%EA%B8%B0%EA%B3%84-%ED%95%99%EC%8A%B5-machine-learning-%EC%9D%80-%EC%A6%90%EA%B2%81%EB%8B%A4-part-1-9a0297198ad8)
+- ML 기본 모델 해설 [&emsp; `r icon_link()`](https://medium.com/@jongdae.lim/%EA%B8%B0%EA%B3%84-%ED%95%99%EC%8A%B5-machine-learning-%EC%9D%80-%EC%A6%90%EA%B2%81%EB%8B%A4-part-1-9a0297198ad8)
 
-- ML의 역사와 이론 [LINK](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=87212039)
+- ML의 역사와 이론 [&emsp; `r icon_link()`](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=87212039)

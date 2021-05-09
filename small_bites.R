@@ -16,4 +16,6 @@ icon_comment <- function(){
     fa("comments", fill = bullet_color)
 }
 
-1
+icon_link <- function(){
+  fa("external-link-alt", fill = bullet_color)
+}
