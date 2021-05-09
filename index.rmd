@@ -385,7 +385,7 @@ class: left, middle, animated, fadeIn, inverted
 
 + 강화 학습 (알파고, 알파스타, 알파폴드2) [&emsp; `r icon_link()`](https://www.tensorflow.org/agents/tutorials/0_intro_rl)
 
-+ 자연어 처리 (GPT-3) [자세한](https://www.youtube.com/watch?v=MV1l2JPAxVY) [간략한](https://www.youtube.com/watch?v=YTKjtKMGCwA)
++ 자연어 처리 (GPT-3) [&emsp; 자세한 `r icon_link()`](https://www.youtube.com/watch?v=MV1l2JPAxVY) [&emsp; 간략한 `r icon_link()`](https://www.youtube.com/watch?v=YTKjtKMGCwA)
 
 ---
 background-image: url(img/whitebg.jpg)
